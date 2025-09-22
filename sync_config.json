@@ -1,0 +1,13 @@
+{
+    "check_interval": 30,
+    "max_retries": 3,
+    "backup_before_apply": true,
+    "notifications": {
+        "on_success": true,
+        "on_error": true
+    },
+    "backup": {
+        "enabled": true,
+        "keep_last": 5
+    }
+}
