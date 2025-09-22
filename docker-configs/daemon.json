@@ -1,0 +1,7 @@
+{
+  "data-root": "/Volumes/External/docker-data",
+  "debug": false,
+  "log-driver": "json-file",
+  "log-level": "warn",
+  "storage-driver": "overlay2"
+}

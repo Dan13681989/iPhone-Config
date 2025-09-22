@@ -27,3 +27,12 @@ fi
 # 5. Create recovery log
 echo "✅ Configuration applied: $(date)" >> ~/iphone-sync/recovery.log
 echo "🎉 iPhone configuration applied successfully!"
+
+# Docker configuration sync
+if [ -d docker-configs ]; then
+    echo "🐳 Applying Docker configurations..."
+    cp -r docker-configs/* ~/docker-configs/ 2>/dev/null || true
+    cd ~/docker-configs
+    chmod +x manage_docker.sh
+    echo "✅ Docker configurations applied!"
+fi
